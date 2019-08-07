@@ -1,0 +1,49 @@
+div>div>input{
+	text-align:center;
+	font-size:16px;
+}
+
+#download{
+	margin-top:10px;
+}
+#result{
+	font-weight:bold;
+	font-size:24px;
+}
+input#aim{
+	border:2px solid violet;
+	margin-left:8px;
+}
+.big{
+	height:28px;
+	background-color:cornsilk ;
+    margin:2px 5px 2px 1px;
+	font-size:16px;
+	width:200px;
+    border:2px solid deepskyblue;
+}
+.s1{
+	height:28px;
+	background-color:cornsilk ;
+    margin:2px 5px 2px 1px;
+	font-size:16px;
+	font-weight:bold;
+	width:100px;
+    border:2px solid deepskyblue;
+}
+.s2{
+	color:red;
+	height:35px;
+	margin:2px 1px 2px 1px;
+	font-size:16px;
+}
+.s3{
+	color:green;
+	height:35px;
+	margin:2px 1px 2px 1px;
+	font-size:16px;
+}
+p>input{
+	font-size:24px;
+	height:30px;
+}

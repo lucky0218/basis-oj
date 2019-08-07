@@ -1,0 +1,95 @@
+<script type="text/javascript">
+    var count = 0;
+
+    function checkCount(boolOK, coun) {
+       if (boolOK == true) {
+            return count++;
+        }
+       else {
+        count--;
+     }
+    }
+	
+	
+
+	function deal(){
+    alert("该功能暂未开放");
+	}
+
+    function AddInput() {
+    countAA = checkCount(true, count);
+       var question = document.getElementById("question");
+        var input = document.createElement("input");
+        input.type = "text";
+		input.value="0";
+        input.id = "candidate[" + count + "]";
+        input.name = "candidate[" + count + "].name";
+		input.disabled="true";
+        question.appendChild(input);                                     
+
+        count++;
+		//以下 为”顶“按钮
+        var input = document.createElement("input");
+        input.type = "button";
+        input.id = "candidate[" + count + "]";
+        input.name = "candidate[" + count + "].name";
+        input.value="顶";
+		input.onclick=function() 
+		{
+		var p=document.getElementById(this.id);
+		var msg=this.id,k;
+		var ar=msg.split("["); k=ar[1];
+		ar=k.split("]"); k=ar[0]-1;
+		var pos=document.getElementById("candidate["+k+"]");
+		var q=pos.value;
+		parseInt(q);
+		q++;
+		String(q);
+		pos.value=q;
+		};
+		question.appendChild(input);
+		
+		
+		//以下为踩按钮
+		var input = document.createElement("input");
+        input.type = "button";
+        input.id = "candidate[" + count + "]";
+        input.name = "candidate[" + count + "].name";
+        input.value="踩";
+		input.onclick=function() 
+		{
+		var p=document.getElementById(this.id);
+		var msg=this.id,k;
+		var ar=msg.split("["); k=ar[1];
+		ar=k.split("]"); k=ar[0]-1;
+		var pos=document.getElementById("candidate["+k+"]");
+		var q=pos.value;
+		parseInt(q);
+		if (q>0) q--;
+		String(q);
+		pos.value=q;
+		};
+		question.appendChild(input);
+		
+        var br = document.createElement("br");
+        question.appendChild(br);
+    }
+	
+	
+
+</script>
+
+
+
+<body>
+<div>
+<h1> 欢迎使用投票器程序！ </h1>
+</div>
+<div style="width: 500px; margin-left: 200px;">
+    <div id="question" style="border: 1px solid blue;">
+        <input id="Text1" type="text" />
+		<input id="btnAddInput" type="button" value="新增候选人" onclick="AddInput()" />
+		<input type="button" id="deal" value="结果" onclick="deal()"/>  <br />
+    </div>
+</div>
+</body>
