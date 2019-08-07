@@ -322,7 +322,7 @@ i.global{
 	border: 2px solid #fff;
 	background: #329cd6;
 	color: #fff;
-	font-size: 14px;
+	font-size: 20px;
 	letter-spacing: 2px;
 	margin-left: -6px;
 	padding: 13px 30px;
@@ -2814,6 +2814,4 @@ margin-bottom:3em;
 		font-size: 0.92em;
 	}
 }
-.col-md-4.services-section-grid1{
-	
-}
+
