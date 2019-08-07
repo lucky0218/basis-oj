@@ -1,0 +1,14 @@
+﻿body {
+    font-family: Arial;
+}
+h1{
+    color: white;
+    background-color: orangered;
+}
+h2{
+    color: darkblue;
+    background-color: lightblue 
+}
+h3{
+    color: darkgreen;
+}
