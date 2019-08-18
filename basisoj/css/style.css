@@ -226,21 +226,21 @@ i.smartphone{
 	height: 70px;
 	background: url('../images/img-sprite.png') no-repeat 0px -63px;
 	display: inline-block;
-	margin-bottom: 2em;
+	margin-bottom: 2px;
 }
 i.user{
 	width: 70px;
 	height: 70px;
 	background: url('../images/img-sprite.png') no-repeat -2px -137px;
 	display: inline-block;
-	margin-bottom: 2em;
+	margin-bottom: 2px; 
 }
 i.global{
 	width: 70px;
 	height: 70px;
 	background: url('../images/img-sprite.png') no-repeat -78px -78px;
 	display: inline-block;
-	margin-bottom: 2em;
+	margin-bottom: 2px;
 }
 .arrow1 {
 	margin-top: 15px;
