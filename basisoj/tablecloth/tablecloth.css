@@ -45,11 +45,12 @@ table{
 }
 th, td{
 	font-family:Roboto;
-	font-size:1.5em;
+	font-size:1.4em;
 	height:50px;
 	text-align:left;
 	padding:.5em;
-	border:2px solid #EEB422;
+	border:2px solid #CDCDC1;
+	
 }
 
 th{background:#328aa4 url(tr_back.gif) repeat-x;color:#fff;}
