@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>个人中心</title>
+<title>提交记录</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -33,8 +33,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="about.html">关于我们</a></li>
 						<li><a href="services.html">进阶之旅</a></li>
 						<li><a href="test.html">模拟测试</a></li>
-						<li><a href="submissions.html">提交记录</a></li>
-						<li><a class="active" href="personal.html">个人中心</a></li>
+						<li><a class="active" href="submissions.html">提交记录</a></li>
+						<li><a href="personal.html">个人中心</a></li>
+						
 					</ul>
 				</div>
 				<!-- script for menu -->
@@ -51,39 +52,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<!--以上为表头-->
-	<!-- header-section-ends -->
-	<div class="content">
-		<div class="contact about-desc">
-			<h3>用户信息</h3>
-   		<div class="container">
-   			<div class="row">
-   				<div class="col-md-8 contact_left">
-					<div class="list-group contact_grid">
-						<h5>[Name]<?php?></h5>
-						<div class="list-group-item"><p>昵称：<?php?></p></div>
-						<div class="list-group-item"><p>个人邮箱：<?php?></p></div>
-					    <div class="list-group-item"><p>学校：<?php?></p></div>
-					    <div class="list-group-item"><p>QQ：<?php?></p></div>
-					    <div class="list-group-item"><p>格言：<?php?></p></div>
-					</div>
-					<a href="#" class="btn btn-success btn-sm">查看提交记录</a>
-   				</div>
-   				<div class="col-md-3">
-   					<div class="contact_right">
-   				<div class="contact-form_grid">
-				   <img src="images/avatar.png" style="width: 100%">
-			      </div>
-   			     </div>
-   				</div>
-   			</div>
-   		</div>
-   	</div>
-   	
-   </div>
-		</div>
-		<!-- 表末 -->
-
-
-</body>
-</html>
+	<!--以上为表头> -->
+    <link href="tablecloth/tablecloth.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="tablecloth/tablecloth.js"></script> 
+	
+	<table cellspacing="0" cellpadding="0" class="submission_container">
+		<tr>
+				<th>评测ID</th>
+				<th>题目</th>
+				<th>状态</th>
+				<th>运行时间</th>
+				<th>运行空间</th>
+				<th>提交用户</th>
+		</tr>
+	    <tr>
+			<td class="sub_id">1</td>
+			<td class="sub_name"><a href="#">A+B Problem</a></td>
+			<td class="sub_state"><a href="#">Accepted</a></td>
+			<td class="sub_time">0ms</td>
+			<td class="sub_space">1MB</td>
+			<td class="sub_user">Aprilgrimoire</td>
+		</tr>
+		<tr>
+			<td class="sub_id">2</td>
+			<td class="sub_name"><a href="#">A+B Problem</a></td>
+			<td class="sub_state"><a href="#">wrong answer</a></td>
+			<td class="sub_time">0ms</td>
+			<td class="sub_space">0MB</td>
+			<td class="sub_user">luckyyou</td>
+		</tr>
+	
+	
+	
+	
+	
+	
