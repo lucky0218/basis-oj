@@ -12,6 +12,13 @@
 	width:80%;
 	margin:20px 10% 20px 10%;
 }
+
+.submission_container{
+	max-height:1000px;
+	width:80%;
+	margin:20px 10% 20px 10%;
+}
+
 .id{
 	width:15%;
 }
@@ -39,6 +46,44 @@
 .state:hover{
 	background:	#87CEFA;
 }
+
+.sub_id{
+	width:10%;
+}
+.sub_id:hover{
+	background:	#87CEFA;
+}
+.sub_name{
+	width:20%;
+}
+.sub_name:hover{
+	background:	#87CEFA;
+}
+.sub_state{
+	width:10%;
+}
+.sub_state:hover{
+	background:	#87CEFA;
+}
+.sub_time{
+	width:10%;
+}
+.sub_time:hover{
+	background:	#87CEFA;
+}
+.sub_space{
+	width:10%;
+}
+.sub_space:hover{
+	background:	#87CEFA;
+}
+.sub_user{
+	width:20%;
+}
+.sub_user:hover{
+	background:	#87CEFA;
+}
+
 
 table{
 	border-collapse:collapse;
