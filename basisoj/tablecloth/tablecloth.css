@@ -60,9 +60,15 @@
 	background:	#87CEFA;
 }
 .sub_state{
-	width:10%;
+	width:15%;
 }
 .sub_state:hover{
+	background:	#87CEFA;
+}
+.sub_score{
+	width:5%;
+}
+.sub_score:hover{
 	background:	#87CEFA;
 }
 .sub_time{
@@ -71,10 +77,10 @@
 .sub_time:hover{
 	background:	#87CEFA;
 }
-.sub_space{
+.sub_memory{
 	width:10%;
 }
-.sub_space:hover{
+.sub_memory:hover{
 	background:	#87CEFA;
 }
 .sub_user{
