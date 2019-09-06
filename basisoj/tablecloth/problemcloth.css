@@ -1,0 +1,51 @@
+body{
+	background-color:#DCDCDC;
+}
+.problem_frontend{
+	line-height:100px;
+	background-color:white;
+	padding:20px 0 5px 20px;
+	width:60%;
+	min-height:800px;
+	margin:20px 20% 20px 20%;
+}
+.heading{
+	padding-left:10px;
+	height:60px;
+}
+.content_heading{
+	margin-top:10px;
+	margin-right:15px;
+	padding:10px;
+	background-color:#FFF5EE;
+}
+.content{
+	background-color:#FFF5EE;
+	min-height:200px;
+	padding:10px;
+	margin:15px 15px 20px 0;
+
+}
+.example{
+	margin:20px 0 20px 0;
+}
+.example>h3{
+	letter-spacing:10px;
+}
+.output_heading{
+	margin:30px 0 20px 0;
+}
+.output{
+	margin:0 0 20px 0;
+}
+#code{
+	margin:0 20px 20px 0;
+	width:80%;
+	height:50px;
+	line-height:0px;
+	overflow:auto;
+	text-align:left;
+}
+h4,h3{
+	line-height:15px;
+}
