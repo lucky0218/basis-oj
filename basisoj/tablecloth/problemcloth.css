@@ -2,7 +2,6 @@ body{
 	background-color:#DCDCDC;
 }
 .problem_frontend{
-	line-height:100px;
 	background-color:white;
 	padding:20px 0 5px 20px;
 	width:60%;
@@ -11,7 +10,7 @@ body{
 }
 .heading{
 	padding-left:10px;
-	height:60px;
+	height:50px;
 }
 .content_heading{
 	margin-top:10px;
@@ -23,7 +22,7 @@ body{
 	background-color:#FFF5EE;
 	min-height:200px;
 	padding:10px;
-	margin:15px 15px 20px 0;
+	margin:0px 15px 20px 0;
 
 }
 .example{
@@ -38,6 +37,10 @@ body{
 .output{
 	margin:0 0 20px 0;
 }
+.problem_frontend_submit{
+	height:50px;
+	font-size:1.5em;
+}
 #code{
 	margin:0 20px 20px 0;
 	width:80%;
@@ -48,4 +51,25 @@ body{
 }
 h4,h3{
 	line-height:15px;
+}
+
+.submit_heading{
+	margin-bottom:20px;
+}
+.submit{
+	background-color:white;
+	padding:20px 0 5px 20px;
+	width:60%;
+	min-height:500px;
+	margin:20px 20% 20px 20%;
+}
+#submit_section{
+	border-radius:10px;
+	width:80%;
+	min-height:100px;
+	max-height:300px;
+	margin-right:20px;
+}
+.submit_text{
+	margin-bottom:20px;
 }
