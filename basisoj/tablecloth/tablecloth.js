@@ -1,10 +1,4 @@
-/* 
 
-	Tablecloth 
-	written by Alen Grakalic, provided by Css Globe (cssglobe.com)
-	please visit http://cssglobe.com/lab/tablecloth/
-	
-*/
 
 this.tablecloth = function(){
 	
@@ -67,120 +61,27 @@ this.tablecloth = function(){
 				arr[j].onmousedown = function(){
 					down(table,this,this.row,this.col);
 				};
-				arr[j].onmouseup = function(){
-					up(table,this,this.row,this.col);
-				};				
-				arr[j].onclick = function(){
-					click(table,this,this.row,this.col);
-				};								
-			};
-		};
-	};
-	
-	// appyling mouseover state for objects (th or td)
-	this.over = function(table,obj,row,col){
-	//	if (!highlightCols && !highlightRows) obj.className = obj.css + " over";  
-		if(check1(obj,col)){
-			//if(highlightCols) highlightCol(table,obj,col);
-			//if(highlightRows) highlightRow(table,obj,row);		
-		};
-	};
-	// appyling mouseout state for objects (th or td)	
-	this.out = function(table,obj,row,col){
-		if (!highlightCols && !highlightRows) obj.className = obj.css; 
-		unhighlightCol(table,col);
-		unhighlightRow(table,row);
-	};
-	// appyling mousedown state for objects (th or td)	
-	this.down = function(table,obj,row,col){
-		obj.className = obj.css + " down";  
-	};
-	// appyling mouseup state for objects (th or td)	
-//	this.up = function(table,obj,row,col){
-//		obj.className = obj.css + " over";  
-//	};	
-	// onclick event for objects (th or td)	
-	this.click = function(table,obj,row,col){
-		if(check1){
-			if(selectable) {
-				unselect(table);	
-				if(highlightCols) highlightCol(table,obj,col,true);
-				if(highlightRows) highlightRow(table,obj,row,true);
-				document.onclick = unselectAll;
-			}
-		};
-		clickAction(obj); 		
-	};		
-	
-	this.highlightCol = function(table,active,col,sel){
-		var css = (typeof(sel) != "undefined") ? "selected" : "over";
-		var tr = table.getElementsByTagName("tr");
-		for (var i=0;i<tr.length;i++){	
-			var arr = new Array();
-			for(j=0;j<tr[i].childNodes.length;j++){				
-				if(tr[i].childNodes[j].nodeType == 1) arr.push(tr[i].childNodes[j]);
-			};							
-			var obj = arr[col];
-			if (check2(active,obj) && check3(obj)) obj.className = obj.css + " " + css; 		
-		};
-	};
-	this.unhighlightCol = function(table,col){
-		var tr = table.getElementsByTagName("tr");
-		for (var i=0;i<tr.length;i++){
-			var arr = new Array();
-			for(j=0;j<tr[i].childNodes.length;j++){				
-				if(tr[i].childNodes[j].nodeType == 1) arr.push(tr[i].childNodes[j])
-			};				
-			var obj = arr[col];
-			if(check3(obj)) obj.className = obj.css; 
-		};
-	};	
-	this.highlightRow = function(table,active,row,sel){
-		var css = (typeof(sel) != "undefined") ? "selected" : "over";
-		var tr = table.getElementsByTagName("tr")[row];		
-		for (var i=0;i<tr.childNodes.length;i++){		
-			var obj = tr.childNodes[i];
-			if (check2(active,obj) && check3(obj)) obj.className = obj.css + " " + css; 		
-		};
-	};
-	this.unhighlightRow = function(table,row){
-		var tr = table.getElementsByTagName("tr")[row];		
-		for (var i=0;i<tr.childNodes.length;i++){
-			var obj = tr.childNodes[i];			
-			if(check3(obj)) obj.className = obj.css; 			
-		};
-	};
-	this.unselect = function(table){
-		tr = table.getElementsByTagName("tr")
-		for (var i=0;i<tr.length;i++){
-			for (var j=0;j<tr[i].childNodes.length;j++){
-				var obj = tr[i].childNodes[j];	
-				if(obj.className) obj.className = obj.className.replace("selected","");
-			};
-		};
-	};
-	this.unselectAll = function(){
-		if(!tableover){
-			tables = document.getElementsByTagName("table");
-			for (var i=0;i<tables.length;i++){
-				unselect(tables[i])
-			};		
-		};
-	};	
-	this.check1 = function(obj,col){
-		return (!(col == 0 && obj.className.indexOf("empty") != -1));
-	}
-	this.check2 = function(active,obj){
-		return (!(active.tagName == "TH" && obj.tagName == "TH")); 
-	};
 	this.check3 = function(obj){
 		return (obj.className) ? (obj.className.indexOf("selected") == -1) : true; 
 	};	*/
+	
 };	
 };
+    var col=document.getElementsByClassName("std_state");
+	var len=col.length;
+	alert(len);
+	for (var i=0;i<len;i++){
+		if (col[i].innerHTML=="Accepted") {col[i].style.color="green";}
+		if (col[i].innerHTML=="WrongAnswer") {col[i].style.color="red";}
+		if (col[i].innerHTML=="TimeLimitExceeded") {col[i].style.color="purple";}
+		if (col[i].innerHTML=="CompileError") {col[i].style.color="gold";}
+		if (col[i].innerHTML=="MemoryLimitExceeded") {col[i].style.color="#00008B";}
+	}
 	start();
 
 };
 
 /* script initiates on page load. */
+
+
 window.onload = tablecloth;
