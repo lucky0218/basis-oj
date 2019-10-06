@@ -69,13 +69,14 @@ this.tablecloth = function(){
 };
     var col=document.getElementsByClassName("std_state");
 	var len=col.length;
-	alert(len);
+	//alert(len);
 	for (var i=0;i<len;i++){
-		if (col[i].innerHTML=="Accepted") {col[i].style.color="green";}
-		if (col[i].innerHTML=="WrongAnswer") {col[i].style.color="red";}
-		if (col[i].innerHTML=="TimeLimitExceeded") {col[i].style.color="purple";}
-		if (col[i].innerHTML=="CompileError") {col[i].style.color="gold";}
-		if (col[i].innerHTML=="MemoryLimitExceeded") {col[i].style.color="#00008B";}
+		if (col[i].innerHTML.toLowerCase()=="accepted") {col[i].style.color="green";}
+		if (col[i].innerHTML.toLowerCase()=="wronganswer") {col[i].style.color="red";}
+		if (col[i].innerHTML.toLowerCase()=="timelimitexceeded") {col[i].style.color="purple";}
+		if (col[i].innerHTML.toLowerCase()=="compileerror") {col[i].style.color="gold";}
+		if (col[i].innerHTML.toLowerCase()=="memorylimitexceeded") {col[i].style.color="#00008B";}
+		if (col[i].innerHTML.toLowerCase()=="runtimeerror") {col[i].style.color="#0000CD";}
 	}
 	start();
 

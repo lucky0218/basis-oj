@@ -1,11 +1,4 @@
-/* 
 
-	TableCloth	
-	by Alen Grakalic, brought to you by cssglobe.com
-	
-*/
-
-/* general styles */
 
 .question_container{
 	max-height:1000px;
@@ -90,6 +83,36 @@
 	background:	#87CEFA;
 }
 
+.detail_id{
+	width:15%;
+}
+.detail_id:hover{
+	background:	#87CEFA;
+}
+.detail_state{
+	width:25%;
+}
+.detail_state:hover{
+	background:	#87CEFA;
+}
+.detail_score{
+	width:10%;
+}
+.detail_score:hover{
+	background:	#87CEFA;
+}
+.detail_memory{
+	width:15%;
+}
+.detail_memory:hover{
+	background:	#87CEFA;
+}
+.detail_time{
+    width:15%;
+}
+.detail_time:hover{
+	background:	#87CEFA;
+}
 
 table{
 	border-collapse:collapse;
